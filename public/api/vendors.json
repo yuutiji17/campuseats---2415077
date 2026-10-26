@@ -1,0 +1,245 @@
+[
+  {
+    "id": "2415077-kenny-hills",
+    "name": "Kenny Hills Bakers",
+    "location": "IIUM Gombak Campus",
+    "openHours": "10:00 am - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2415077-m1",
+        "name": "Tiramisu Cake",
+        "description": "traditionally made with espresso-soaked ladyfingers and mascarpone cream",
+        "price": 19.5,
+        "category": "Dessert",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "2415077-m2",
+        "name": "Peach Struddle",
+        "description": "a sweet, fruit-filled pastry featuring a contrast of crisp, buttery layers and a tender, juicy peach center",
+        "price": 16.9,
+        "category": "Dessert",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2415077-m3",
+        "name": "Watermelon Strawberry",
+        "description": "popular dual-fruit flavor combination ",
+        "price": 10.5,
+        "category": "Drinks",
+        "available": false,
+        "popular": false
+      },
+      {
+        "id": "2415077-m4",
+        "name": "Chocolate Cake",
+        "description": "Chocolate sponge cake with chocolate cream",
+        "price": 18.5,
+        "category": "Dessert",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2415077-m5",
+        "name": "Iced Latte",
+        "description": "Espresso served with milk and ice",
+        "price": 12,
+        "category": "Drinks",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2415077-m6",
+        "name": "Lemon Tea",
+        "description": "Tea served with lemon and ice",
+        "price": 8.5,
+        "category": "Drinks",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2415077-m7",
+        "name": "Chicken Sandwich",
+        "description": "Chicken with lettuce and tomato in toasted bread",
+        "price": 18,
+        "category": "Meals",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "2415077-m8",
+        "name": "Mushroom Pasta",
+        "description": "Pasta with mushrooms in a creamy sauce",
+        "price": 24,
+        "category": "Meals",
+        "available": true,
+        "popular": false
+      }
+    ]
+  },
+  {
+    "id": "2415077-noodle-house",
+    "name": "Campus Noodle House",
+    "location": "IIUM Food Court, Stall 2",
+    "openHours": "10:00 am - 8:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2415077-noodle-house-m1",
+        "name": "Chicken Noodle Soup",
+        "description": "Egg noodles in chicken broth with shredded chicken and vegetables",
+        "price": 8.5,
+        "category": "Noodle Soup",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "2415077-noodle-house-m2",
+        "name": "Beef Noodle Soup",
+        "description": "Rice noodles in beef broth with sliced beef and herbs",
+        "price": 10,
+        "category": "Noodle Soup",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2415077-noodle-house-m3",
+        "name": "Tom Yum Noodle Soup",
+        "description": "Rice noodles in spicy sour broth with chicken and mushrooms",
+        "price": 9.5,
+        "category": "Noodle Soup",
+        "available": false,
+        "popular": false
+      },
+      {
+        "id": "2415077-noodle-house-m4",
+        "name": "Fish Ball Noodle Soup",
+        "description": "Rice vermicelli in clear broth with fish balls and greens",
+        "price": 8,
+        "category": "Noodle Soup",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2415077-noodle-house-m5",
+        "name": "Lime Juice",
+        "description": "Fresh lime juice served over ice",
+        "price": 3,
+        "category": "Drinks",
+        "available": true,
+        "popular": false
+      }
+    ]
+  },
+  {
+    "id": "2415077-selera-kampung",
+    "name": "Selera Kampung",
+    "location": "IIUM Food Court, Stall 3",
+    "openHours": "8:00 am - 8:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2415077-selera-kampung-m1",
+        "name": "Nasi Lemak Ayam",
+        "description": "Coconut rice with fried chicken, sambal, peanuts and cucumber",
+        "price": 8,
+        "category": "Rice",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "2415077-selera-kampung-m2",
+        "name": "Nasi Ayam Penyet",
+        "description": "Rice with smashed fried chicken, sambal and fresh vegetables",
+        "price": 9,
+        "category": "Rice",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2415077-selera-kampung-m3",
+        "name": "Nasi Goreng Kampung",
+        "description": "Fried rice with anchovies, vegetables and a fried egg",
+        "price": 7,
+        "category": "Rice",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2415077-selera-kampung-m4",
+        "name": "Chicken Satay",
+        "description": "Five grilled chicken skewers served with peanut sauce",
+        "price": 8,
+        "category": "Grill",
+        "available": false,
+        "popular": false
+      },
+      {
+        "id": "2415077-selera-kampung-m5",
+        "name": "Air Bandung",
+        "description": "Rose syrup with milk served over ice",
+        "price": 3,
+        "category": "Drinks",
+        "available": true,
+        "popular": false
+      }
+    ]
+  },
+  {
+    "id": "2415077-kopitiam",
+    "name": "Kopitiam Kita",
+    "location": "IIUM Student Centre, Ground Floor",
+    "openHours": "7:00 am - 6:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2415077-kopitiam-m1",
+        "name": "Kaya Toast Set",
+        "description": "Toasted bread with kaya and butter, served with two soft-boiled eggs",
+        "price": 6.5,
+        "category": "Breakfast",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "2415077-kopitiam-m2",
+        "name": "Half-Boiled Eggs",
+        "description": "Two soft-boiled eggs served with soy sauce and pepper",
+        "price": 3.5,
+        "category": "Breakfast",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2415077-kopitiam-m3",
+        "name": "Mee Goreng",
+        "description": "Stir-fried yellow noodles with egg and vegetables",
+        "price": 7,
+        "category": "Noodles",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2415077-kopitiam-m4",
+        "name": "Kopi O",
+        "description": "Traditional black coffee served hot",
+        "price": 2.5,
+        "category": "Drinks",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2415077-kopitiam-m5",
+        "name": "Teh Tarik",
+        "description": "Pulled milk tea served hot",
+        "price": 3,
+        "category": "Drinks",
+        "available": true,
+        "popular": true
+      }
+    ]
+  }
+]

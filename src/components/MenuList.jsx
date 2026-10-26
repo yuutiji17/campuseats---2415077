@@ -1,15 +1,22 @@
-import MenuItemCard from "./MenuItemCard";
+import MenuItemCard from './MenuItemCard.jsx'
 
-function MenuList ({ items, onAdd }) {
-    if (items.length === 0) {
-        return <p className="muted">No items on this menu yet</p>
-    }
+function MenuList({ items, onAdd, isVendorOpen }) {
+  if (items.length === 0) {
+    return <p className="muted">No items on this menu yet.</p>
+  }
 
-    return (
-        <div className="grid">
-            {items.map((item) => (
-                <MenuItemCard key={item.id} item={item} onAdd={onAdd} /> ))}
-        </div>
-    )
+  return (
+    <div className="grid">
+      {items.map((item) => (
+        <MenuItemCard
+          key={item.id}
+          item={item}
+          onAdd={onAdd}
+          isVendorOpen={isVendorOpen}
+        />
+      ))}
+    </div>
+  )
 }
-export default MenuList 
+
+export default MenuList
