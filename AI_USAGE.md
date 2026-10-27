@@ -20,3 +20,4 @@ Add a new section every week, before you tag. Did not use AI? Write "None" under
 - What I asked for: Help with vendor data, fetching, cart, checkout and order notes.
 - What I kept, changed or rejected, and why: Kept the code and explanations to help me understand the lab.
 - One thing the AI got wrong and how I fixed it: The vendor border was hidden on hover. Codex fixed the CSS after I reported it...
+
