@@ -22,3 +22,7 @@ Add a new section every week, before you tag. Did not use AI? Write "None" under
 - One thing the AI got wrong and how I fixed it: The vendor border was hidden on hover. Codex fixed the CSS after I reported it...
 
 ## Week 4
+- Tool(s): Chatgpt
+- What I asked for: Checked my week 3 code, then helped me do Part B (useVendors, cart context, useCart and the pages/routes).
+- What I kept, changed or rejected, and why: Kept most of it since it matched the lab sheet. Asked it to explain the changes so I understand how context and routing work. Tested with the "Test yourself" steps.
+- One thing the AI got wrong and how I fixed it: Orders page didn't show the item notes, so I added them myself for my feature (order notes).
