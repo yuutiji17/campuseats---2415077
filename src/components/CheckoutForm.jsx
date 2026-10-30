@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router'
+import { useCart } from '../hooks/useCart.js'
 
 const MAHALLAHS = [
   'Ali',
@@ -32,7 +34,9 @@ function validate(values) {
   return errors
 }
 
-function CheckoutForm({ onPlaceOrder }) {
+function CheckoutForm() {
+  const { placeOrder } = useCart()
+  const navigate = useNavigate()
   const [values, setValues] = useState({
     name: '',
     mahallah: '',
@@ -50,7 +54,8 @@ function CheckoutForm({ onPlaceOrder }) {
     const found = validate(values)
     setErrors(found)
     if (Object.keys(found).length === 0) {
-      onPlaceOrder({ ...values, name: values.name.trim() })
+      placeOrder({ ...values, name: values.name.trim() })
+      navigate('/orders')
     }
   }
 

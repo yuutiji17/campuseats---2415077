@@ -1,4 +1,7 @@
-function CartItem({ line, onChangeQty, onRemove, onChangeNote }) {
+import { useCart } from '../hooks/useCart.js'
+
+function CartItem({ line }) {
+  const { changeQty, removeFromCart, changeNote } = useCart()
   const { item, qty, note } = line
   return (
     <li className="cart-line">
@@ -11,7 +14,7 @@ function CartItem({ line, onChangeQty, onRemove, onChangeNote }) {
           type="button"
           disabled={qty <= 1}
           aria-label={`Decrease quantity of ${item.name}`}
-          onClick={() => onChangeQty(item.id, -1)}
+          onClick={() => changeQty(item.id, -1)}
         >
           −
         </button>
@@ -19,7 +22,7 @@ function CartItem({ line, onChangeQty, onRemove, onChangeNote }) {
         <button
           type="button"
           aria-label={`Increase quantity of ${item.name}`}
-          onClick={() => onChangeQty(item.id, 1)}
+          onClick={() => changeQty(item.id, 1)}
         >
           +
         </button>
@@ -29,7 +32,7 @@ function CartItem({ line, onChangeQty, onRemove, onChangeNote }) {
         type="button"
         className="link danger"
         aria-label={`Remove ${item.name} from cart`}
-        onClick={() => onRemove(item.id)}
+        onClick={() => removeFromCart(item.id)}
       >
         Remove
       </button>
@@ -40,7 +43,7 @@ function CartItem({ line, onChangeQty, onRemove, onChangeNote }) {
         <textarea
           id={`note-${item.id}`}
           value={note}
-          onChange={(event) => onChangeNote(item.id, event.target.value)}
+          onChange={(event) => changeNote(item.id, event.target.value)}
           placeholder="For example: no onions or less sugar"
           rows={2}
         />
