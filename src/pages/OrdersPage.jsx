@@ -28,6 +28,7 @@ function OrdersPage() {
                 <li key={line.item.id}>
                   {line.qty} × {line.item.name}: RM{' '}
                   {(line.item.price * line.qty).toFixed(2)}
+                  {line.note.trim() && <p className="muted">Note: {line.note}</p>}
                 </li>
               ))}
             </ul>
