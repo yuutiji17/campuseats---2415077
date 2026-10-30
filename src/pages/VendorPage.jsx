@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router'
+import { Link, useNavigate, useParams } from 'react-router'
 import MenuList from '../components/MenuList.jsx'
 import { Loading, ErrorMessage } from '../components/Status.jsx'
 import { useVendors } from '../hooks/useVendors.js'
@@ -7,6 +7,7 @@ function VendorPage() {
   // /vendor/2415077-kenny-hills gives { id: '2415077-kenny-hills' }.
   const { id } = useParams()
   const { vendors, loading, error, reload } = useVendors()
+  const navigate = useNavigate()
 
   if (loading) return <Loading />
   if (error) return <ErrorMessage message={error} onRetry={reload} />
@@ -24,9 +25,13 @@ function VendorPage() {
 
   return (
     <section>
-      <p>
-        <Link to="/">← All vendors</Link>
-      </p>
+      <button
+        type="button"
+        className="btn btn-small"
+        onClick={() => navigate('/')}
+      >
+        ← All vendors
+      </button>
       <h2 className="section-title">Menu: {vendor.name}</h2>
       <p className="muted">
         {vendor.location} · Open: {vendor.openHours}

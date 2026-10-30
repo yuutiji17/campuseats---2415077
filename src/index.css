@@ -7,11 +7,14 @@
    ===================================================================== */
 
 :root {
-  --green: #00685e;
-  --green-light: #e6f2f0;
-  --text: #1f2933;
-  --muted: #616e7c;
-  --bg: #f7f8fa;
+  /* "Neutral elegance" palette: #FFDBBB, #CCBEB1, #997E67, #664930 */
+  --green: #664930;       /* main colour: dark brown */
+  --green-light: #ffdbbb; /* peach */
+  --border: #ccbeb1;      /* beige: dividers and disabled buttons */
+  --accent: #997e67;      /* mid brown: input and button borders */
+  --text: #2e2118;
+  --muted: #6f5a48;
+  --bg: #f7f1eb;
   --radius: 12px;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   color: var(--text);
@@ -33,7 +36,7 @@ body { margin: 0; }
 .nav { display: flex; gap: 1.25rem; }
 .nav a { color: #fff; text-decoration: none; }
 .badge {
-  background: #fff;
+  background: var(--green-light);
   color: var(--green);
   border-radius: 999px;
   padding: 0 0.5rem;
@@ -69,7 +72,7 @@ body { margin: 0; }
   width: 100%; padding: 0.55rem; border: 0; border-radius: 8px;
   background: var(--green); color: #fff; font-weight: 600; cursor: pointer;
 }
-.btn:disabled { background: #c5cbd3; cursor: not-allowed; }
+.btn:disabled { background: var(--border); cursor: not-allowed; }
 
 .footer { text-align: center; color: var(--muted); padding: 2rem 1rem; font-size: 0.85rem; }
 
@@ -88,15 +91,15 @@ button.vendor-card.selected { border-color: var(--green); }
 .cart-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 1rem; align-items: start; }
 @media (max-width: 720px) { .cart-layout { grid-template-columns: 1fr; } }
 .cart-list { list-style: none; margin: 0; padding: 0; }
-.cart-line { display: grid; grid-template-columns: 1fr auto auto auto; gap: 1rem; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid #e4e7eb; }
+.cart-line { display: grid; grid-template-columns: 1fr auto auto auto; gap: 1rem; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid var(--border); }
 .cart-name { margin: 0; font-weight: 600; }
 .qty { display: flex; align-items: center; gap: 0.5rem; }
-.qty button { width: 32px; height: 32px; border-radius: 8px; border: 1px solid #c5cbd3; background: #fff; cursor: pointer; font-size: 1.1rem; }
+.qty button { width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--accent); background: #fff; cursor: pointer; font-size: 1.1rem; }
 .line-total { font-weight: 600; margin: 0; }
 .cart-total { text-align: right; font-size: 1.15rem; font-weight: 700; margin: 1rem 0 0; }
 .form { display: flex; flex-direction: column; gap: 0.35rem; }
 .form label { font-weight: 600; font-size: 0.9rem; margin-top: 0.5rem; }
-.form input, .form select { padding: 0.5rem; border: 1px solid #c5cbd3; border-radius: 8px; font: inherit; }
+.form input, .form select { padding: 0.5rem; border: 1px solid var(--accent); border-radius: 8px; font: inherit; }
 .form .btn { margin-top: 1rem; }
 .field-error { color: #b3261e; font-size: 0.85rem; margin: 0; }
 .error { border-left: 4px solid #b3261e; }
@@ -172,22 +175,22 @@ start; }
 .cart-list { list-style: none; margin: 0; padding: 0; }
 .cart-line { display: grid; grid-template-columns: 1fr auto auto auto; gap: 1rem;
  align-items: center; padding: 0.75rem 0; border-bottom: 1px solid
-#e4e7eb; }
+var(--border); }
 .cart-name { margin: 0; font-weight: 600; }
 .qty { display: flex; align-items: center; gap: 0.5rem; }
 .qty button { width: 32px; height: 32px; border-radius: 8px; border: 1px solid
-#c5cbd3;
+var(--accent);
  background: #fff; cursor: pointer; }
 .line-total { font-weight: 600; margin: 0; }
 .cart-total { text-align: right; font-size: 1.15rem; font-weight: 700; margin: 1rem 0
 0; }
 .form { display: flex; flex-direction: column; gap: 0.35rem; }
 .form label { font-weight: 600; font-size: 0.9rem; margin-top: 0.5rem; }
-.form input, .form select { padding: 0.5rem; border: 1px solid #c5cbd3; borderradius: 8px; font: inherit; }
+.form input, .form select { padding: 0.5rem; border: 1px solid var(--accent); borderradius: 8px; font: inherit; }
 .field-error { color: #b3261e; font-size: 0.85rem; margin: 0; }
 .error { border-left: 4px solid #b3261e;}
 
 /* Each note spans its cart row on both desktop and mobile. */
 .cart-note { grid-column: 1 / -1; }
 .cart-note label { display: block; margin-bottom: 0.35rem; font-size: 0.9rem; font-weight: 600; }
-.cart-note textarea { display: block; width: 100%; padding: 0.5rem; border: 1px solid #c5cbd3; border-radius: 8px; font: inherit; resize: vertical; }
+.cart-note textarea { display: block; width: 100%; padding: 0.5rem; border: 1px solid var(--accent); border-radius: 8px; font: inherit; resize: vertical; }

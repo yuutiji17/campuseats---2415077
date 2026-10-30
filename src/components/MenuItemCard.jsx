@@ -8,7 +8,6 @@ function MenuItemCard({ item, onAdd, isVendorOpen }) {
       </div>
       <p className="tag">{item.category}</p>
       <h3>{item.name}</h3>
-      {item.popular && <span className="tag">Popular ⭐</span>}
       <p className="muted">{item.description}</p>
       <p className="price">RM {item.price.toFixed(2)}</p>
       <button

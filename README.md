@@ -7,18 +7,16 @@ file is accessible in the browser.
 
 Kenny Hills Bakers is the first vendor, with eight items across Dessert, Drinks,
 and Meals. The five added items and their prices are sample assignment data,
-not a verified restaurant menu. `available: false` marks an item as sold out;
-`popular: true` marks a featured item in the data.
+not a verified restaurant menu. `available: false` marks an item as sold out.
 
 The restaurant ID and every menu item ID start with the owner's matric number,
 `2415077`, to keep identifiers distinct from other students' data.
 
-Three fictional sample shops are also included: Campus Noodle House, Selera
-Kampung, and Kopitiam Kita, each with five menu items. Their locations, opening
-hours, menus, and prices are mock assignment data. All use the owner's matric
-prefix with a shop identifier to keep IDs unique. No classmates' vendor data is
-used, so the assignment's requirement for two classmates' shops and their
-credits is not completed.
+Faiz's Noodle House is a fictional sample shop with eight menu items in three categories, using the
+owner's matric prefix in its IDs.
+
+Vendors 3–4 are from classmates: Yiss Cafe from 2415719 and Faizul Cafe from
+2418793. Their data is used as shared, with their own matric numbers in the IDs.
 
 ## React + Vite template
 
